@@ -243,7 +243,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e967eb22da1d9ed4596af301db2e23d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  normalSpeed: 5
+  sprintMultiplier: 2
+  jumpForce: 10
+  additionalGravity: 0
 --- !u!54 &81353975
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -489,6 +492,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfMines: 10
+--- !u!114 &1403865046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403865040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c35f71e0fba2b449a49397a29d2036d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2425213434319677252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -541,6 +556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor
       objectReference: {fileID: 0}
+    - target: {fileID: 385793306526761490, guid: 1657751786639af43975afdf966721c0, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 1085561242524916962, guid: 1657751786639af43975afdf966721c0, type: 3}
       propertyPath: m_Name
       value: tile64
@@ -556,6 +575,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 385793306526761490, guid: 1657751786639af43975afdf966721c0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1403865044}
+    - targetCorrespondingSourceObject: {fileID: 385793306526761490, guid: 1657751786639af43975afdf966721c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1403865046}
   m_SourcePrefab: {fileID: 100100000, guid: 1657751786639af43975afdf966721c0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
